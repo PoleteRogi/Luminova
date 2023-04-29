@@ -72,10 +72,10 @@ denoiseAmbDetail = blend_images(denoised, detail)
 
 # COLOR FILTERS
 filter = ImageEnhance.Contrast(denoiseAmbDetail)
-contrastedImage = filter.enhance(1.2)
+contrastedImage = filter.enhance(1.1)
 
 filter = ImageEnhance.Color(contrastedImage)
-saturatedImage = filter.enhance(2.4)
+saturatedImage = filter.enhance(2.3)
 
 filter = ImageEnhance.Brightness(contrastedImage)
 brightnedImage = filter.enhance(2)
